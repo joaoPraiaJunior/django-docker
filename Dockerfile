@@ -37,6 +37,10 @@ RUN python -m venv /venv && \
   chown -R duser:duser /data/web/media && \
   chmod -R 755 /data/web/static && \
   chmod -R 755 /data/web/media && \
+  chown -R duser:duser /data/web/static/admin && \
+  chown -R duser:duser /data/web/media/admin && \
+  chmod -R 755 /data/web/static/admin && \
+  chmod -R 755 /data/web/media/admin && \
   chmod -R +x /scripts
 
 # Adiciona a pasta scripts e venv/bin 
