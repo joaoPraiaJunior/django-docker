@@ -9,8 +9,8 @@ services:
       - 8000:8000
     volumes:
       - ./djangoapp:/djangoapp
-      - /home/user/data/web/static:/data/web/static/
-      - /home/user/data/web/media:/data/web/media/
+      - ./data/web/static:/home/user/data/web/static/
+      - ./data/web/media:/home/user/data/web/media/
     env_file:
       - ./dotenv_files/.env
     depends_on:
